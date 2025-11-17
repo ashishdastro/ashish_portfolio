@@ -1,59 +1,58 @@
-/* ===== HERO (Landing Page) ===== */
-.hero {
-  text-align: center;
-  padding: 5rem 1rem;
-  background: #ffffff;
-  border-bottom: 1px solid #ddd;
+/* ===== Artifact Card Layout ===== */
+#artifacts {
+  max-width: 900px;
+  margin: 3rem auto;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
+.project {
+  background: #fff;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+/* Hover effect */
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+/* Thumbnail image */
+.project img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Title + content */
+.project-content {
+  flex: 1;
+}
+
+/* Artifact title */
+.project h3 {
+  margin-top: 0;
   margin-bottom: 0.5rem;
   color: #2c3e50;
 }
 
-.hero h3 {
-  font-size: 1.3rem;
-  color: #555;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  max-width: 600px;
-  margin: 0 auto 2rem auto;
-  font-size: 1.1rem;
-  color: #333;
-}
-
-/* Hero Buttons */
-.hero-links {
-  margin-top: 1.5rem;
-}
-
-.btn,
-.btn-outline {
-  padding: 0.75rem 1.5rem;
-  margin: 0.5rem;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+/* Artifact link */
+.project-link {
   display: inline-block;
-}
-
-/* Solid button */
-.btn {
-  background: #007acc;
-  color: #fff;
-}
-
-/* Outline button */
-.btn-outline {
-  border: 2px solid #007acc;
+  margin-top: 0.5rem;
+  text-decoration: none;
   color: #007acc;
-  background: transparent;
+  font-weight: 600;
 }
 
-.btn:hover,
-.btn-outline:hover {
-  opacity: 0.8;
+.project-link:hover {
+  text-decoration: underline;
 }
